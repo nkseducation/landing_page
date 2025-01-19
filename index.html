@@ -1,11 +1,283 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="mr">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>NKs Education</title>
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css"
+      rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet" />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet" />
+
+    <link href="index.css" rel="stylesheet" />
   </head>
   <body>
-    <h1>Hello World</h1>
+    <!-- Header -->
+    <header class="hero">
+      <div class="container">
+        <!-- Logo and Title -->
+        <div class="flex items-center">
+          <div class="absolute left-0">
+            <img src="images/logo.jpg" alt="NK's Education Logo" class="logo" />
+          </div>
+          <h1 class="text-5xl font-bold text-center mx-auto font-roboto">
+            NK's EDUCATION
+          </h1>
+        </div>
+
+        <!-- Subtitle -->
+        <p class="text-xl text-right mt-3 mb-10 mr-10">
+          <i>......Your Success is Our Passion</i>
+        </p>
+        <p class="text-3xl text-center mt-10 mb-1">
+          Best Online Class for All Academic Courses
+        </p>
+        <p class="text-3xl text-center mt-2 mb-10">
+          <span><b>Maharashtra State Board</b></span>
+        </p>
+
+        <!-- Button -->
+        <div class="text-center">
+          <button class="button text-2xl px-6 py-3">
+            <a
+              href="https://play.google.com/store/apps/details?id=co.iron.nobtg"
+              target="_blank"
+              title="Download App"
+              >Download App Now</a
+            >
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <!-- Video Section -->
+    <section class="video-section">
+      <h2 class="video-title">कोर्स घेण्याआधी हा व्हिडिओ नक्की पहा!</h2>
+      <div class="video-link">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/giI18-bBIxU?si=BmCfYVPSfeotjZHm"
+          title="YouTube video player"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+          referrerpolicy="strict-origin-when-cross-origin"
+          allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features-section">
+      <div class="features-left">
+        <h2 class="text-5xl font-bold text-center text-white-600 mb-6">
+          Our Features
+        </h2>
+        <div class="feature-item">
+          <i class="fas fa-video"></i>
+          <p>&nbsp;&nbsp;Recorded Sessions</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-circle-notch fa-spin"></i>
+          <p>&nbsp;&nbsp;Live Classes</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-clipboard-list"></i>
+          <p>&nbsp;&nbsp;Online Tests</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-file-alt"></i>
+          <p>&nbsp;&nbsp;Practice Papers</p>
+        </div>
+        <div class="feature-item">
+          <i class="fas fa-book"></i>
+          <p>&nbsp;&nbsp;Notes</p>
+        </div>
+      </div>
+      <div class="features-right">
+        <div class="competitive-exams text-white-600">
+          <h3>Competitive Exams</h3>
+          <ul>
+            <li>5 वी नवोदय</li>
+            <li>8 वी NMMS</li>
+            <li>इतर राज्य-स्तरीय स्पर्धा परीक्षा</li>
+          </ul>
+        </div>
+        <div class="regular-batches text-white-600">
+          <h3>Regular Batches (4th to 10th Grade)</h3>
+          <ul>
+            <li>English Medium (इंग्रजी माध्यम)</li>
+            <li>Semi-English Medium (अर्ध-इंग्रजी माध्यम)</li>
+            <li>Marathi Medium (मराठी माध्यम)</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Discount Section -->
+    <section
+      class="discount-section text-center bg-gradient-to-r from-yellow-400 via-red-500 to-pink-500 py-8 text-white">
+      <h2 class="text-3xl font-bold glow-text">
+        Every Course Has Massive Discounts!
+      </h2>
+      <p class="discount-section-subtitle text-2xl mt-4 mb-6">
+        <i>Grab the opportunity to excel in your education journey!</i>
+      </p>
+      <button class="button mt-10">
+        <a
+          href="https://wa.me/9226719313?text=I%20want%20discount%20on%20Course"
+          target="_blank"
+          title="Get Discount">
+          Get this discount now
+        </a>
+      </button>
+    </section>
+
+    <!-- WhatsApp Pop-Up -->
+    <a
+      href="https://wa.me/9226719313?text=I'm%20interested%20in%20NK%20Education"
+      target="_blank"
+      class="whatsapp-button"
+      title="Chat with us on WhatsApp">
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+      <h2>1000+ Trusted Student</h2>
+      <div class="testimonials-slider">
+        <div class="slider">
+          <!-- Testimonial 1 -->
+          <div class="testimonial-item">
+            <img src="images/ProfileImage.jpg" alt="Student 1" />
+            <p>
+              "The online classes are very interactive and helped me score
+              excellent marks!"
+            </p>
+            <h3>Student 1</h3>
+          </div>
+          <!-- Testimonial 2 -->
+          <div class="testimonial-item">
+            <img src="images/ProfileImage.jpg" alt="Student 2" />
+            <p>
+              "I loved the flexibility of learning at my own pace. Great
+              experience!"
+            </p>
+            <h3>Student 2</h3>
+          </div>
+          <!-- Testimonial 3 -->
+          <div class="testimonial-item">
+            <img src="images/ProfileImage.jpg" alt="Student 3" />
+            <p>
+              "The teachers are very knowledgeable and always available for
+              help."
+            </p>
+            <h3>Student 3</h3>
+          </div>
+          <!-- Testimonial 4 -->
+          <div class="testimonial-item">
+            <img src="images/ProfileImage.jpg" alt="Student 4" />
+            <p>
+              "Excellent content and engaging lessons that keep me motivated."
+            </p>
+            <h3>Student 4</h3>
+          </div>
+          <!-- Testimonial 5 -->
+          <div class="testimonial-item">
+            <img src="images/ProfileImage.jpg" alt="Student 5" />
+            <p>
+              "The online tests really helped me assess my understanding of the
+              subjects."
+            </p>
+            <h3>Student 5</h3>
+          </div>
+          <!-- Testimonial 6 -->
+          <div class="testimonial-item">
+            <img src="images/ProfileImage.jpg" alt="Student 6" />
+            <p>
+              "The app is user-friendly and the study material is top-notch!"
+            </p>
+            <h3>Student 6</h3>
+          </div>
+          <!-- Testimonial 7 -->
+          <div class="testimonial-item">
+            <img src="images/ProfileImage.jpg" alt="Student 7" />
+            <p>
+              "I feel confident in my preparation for exams thanks to NK
+              Education."
+            </p>
+            <h3>Student 7</h3>
+          </div>
+          <!-- Testimonial 8 -->
+          <div class="testimonial-item">
+            <img src="images/ProfileImage.jpg" alt="Student 8" />
+            <p>
+              "The video lessons are very clear, and the notes are very
+              helpful."
+            </p>
+            <h3>Student 8</h3>
+          </div>
+          <!-- Testimonial 9 -->
+          <div class="testimonial-item">
+            <img src="images/ProfileImage.jpg" alt="Student 9" />
+            <p>
+              "NK Education helped me clear my doubts and boosted my
+              confidence."
+            </p>
+            <h3>Student 9</h3>
+          </div>
+          <!-- Testimonial 10 -->
+          <div class="testimonial-item">
+            <img src="images/ProfileImage.jpg" alt="Student 10" />
+            <p>
+              "I highly recommend NK Education for anyone preparing for
+              competitive exams."
+            </p>
+            <h3>Student 10</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="grid md:grid-cols-3 gap-8">
+          <div>
+            <h3 class="text-xl font-bold mb-4">Contact</h3>
+            <p>Mobile: 9226719313</p>
+            <p>Email: nkeducation@example.com</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4">Address</h3>
+            <p>Balinge, Tal-Karver, dist-Kolhapur</p>
+          </div>
+          <div>
+            <h3 class="text-xl font-bold mb-4 ml-5px">Social Media</h3>
+            <div class="flex space-x-10">
+              <a
+                href="https://www.facebook.com/profile.php?id=61567362382804"
+                class="hover:text-gray-300"
+                ><i class="fab fa-facebook fa-2x"></i
+              ></a>
+              <a
+                href="https://wa.me/9886369918?text=I'm%20interested%20in%20NK%20Education"
+                class="hover:text-gray-300"
+                ><i class="fab fa-whatsapp fa-2x"></i
+              ></a>
+              <a
+                href="https://www.youtube.com/embed/giI18-bBIxU?si=BmCfYVPSfeotjZHm"
+                class="hover:text-gray-300"
+                ><i class="fab fa-youtube fa-2x"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
