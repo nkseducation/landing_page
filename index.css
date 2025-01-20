@@ -230,14 +230,8 @@ h2 {
   transition: all 0.3s ease-in-out;
 }
 
-.whatsapp-button:hover {
-  transform: scale(1.1);
-  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
-  display: block;
-}
-
 .whatsapp-button i {
-  font-size: 24px;
+  font-size: 30px;
 }
 
 .glow-text {
@@ -266,7 +260,6 @@ h2 {
   color: white;
 }
 
-/* Testimonials Section */
 .testimonials-section {
   padding: 50px 0;
   background-color: #f1f1f1;
@@ -319,14 +312,13 @@ h2 {
   margin-top: 10px;
 }
 
-/* Desktop animation */
 @media screen and (min-width: 769px) {
   .testimonials-slider {
     animation: moveLeft 20s linear infinite;
   }
 
   .testimonial-item {
-    width: 33.333%; /* Show 3 items at once on desktop */
+    width: 33.333%;
   }
 
   @keyframes moveLeft {
@@ -341,24 +333,29 @@ h2 {
 
 .footer {
   background-color: rgb(49, 49, 49);
-  padding: 3rem;
+  padding: 4rem;
   color: #fff;
-  height: 300px;
+  height: 200px;
 }
 
+.footer i {
+  font-size: 1.4rem;
+}
+
+/*=====================================*/
 /* Mobile View */
 
 @media screen and (max-width: 768px) {
   .hero {
     padding: 2rem;
+    align-items: center;
     text-align: center;
   }
 
   .logo {
     height: 50px;
     width: 50px;
-    margin-left: 20px;
-    margin-top: 0px;
+    margin-top: 30px;
   }
 
   .hero h1 {
@@ -378,7 +375,7 @@ h2 {
   }
   .button {
     margin-top: 18px;
-    font-size: 1rem;
+    font-size: 1.2rem;
     padding: 0.3rem 0.6rem;
   }
 
@@ -402,16 +399,17 @@ h2 {
   .features-left,
   .features-right {
     width: 100%;
-    margin-bottom: 30px;
+    margin-bottom: 40px;
   }
 
   .feature-item {
-    margin-left: 20px;
+    margin-left: 120px;
     font-size: 1.5rem;
   }
 
   .features-left h2 {
     font-size: 2rem;
+    margin-bottom: 25px;
   }
 
   .competitive-exams h3,
@@ -430,6 +428,15 @@ h2 {
     font-size: 1.2rem;
   }
 
+  .discount-section h2 {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    word-wrap: break-word;
+    text-align: center;
+    margin: 10px auto;
+    width: 90%;
+  }
+
   .discount-section p {
     font-size: 0.6rem;
   }
@@ -443,20 +450,24 @@ h2 {
   }
 
   .testimonial-item img {
-    width: 80px;
-    height: 80px;
+    width: 150px;
+    height: 200px;
+    border: 2px solid #333;
+    border-radius: 12px;
+    box-shadow: 0 20px 30px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
 
   .testimonial-item p {
-    font-size: 0.9rem;
-  }
-
-  .testimonial-item h3 {
     font-size: 1.2rem;
   }
 
+  .testimonial-item h3 {
+    font-size: 1.4rem;
+  }
+
   .footer {
-    height: 400px;
+    height: 350px;
     padding: 2rem;
   }
 
@@ -469,14 +480,8 @@ h2 {
   }
 
   .whatsapp-button {
-    width: 40px;
-    height: 40px;
-  }
-
-  .download-app-button {
-    width: 180px;
-    height: 40px;
-    font-size: 0.8rem;
+    width: 50px;
+    height: 50px;
   }
 }
 
