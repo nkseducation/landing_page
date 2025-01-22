@@ -3,7 +3,7 @@
   padding: 5rem;
   color: #fff;
   box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.1);
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 .logo {
@@ -24,7 +24,9 @@
   transform: scale(1.1);
 }
 
-h2 {
+.discount-section h2,
+.video-section h2,
+.testimonials-section h2 {
   font-size: 2.25rem;
   font-weight: bold;
   text-align: center;
@@ -49,6 +51,7 @@ h2 {
   }
 }
 
+/* Why should buy course section */
 .why-should-i-container {
   background: #eeeaea;
   padding: 2rem;
@@ -62,7 +65,7 @@ h2 {
 
 .video-link iframe {
   width: 100%;
-  height: 500px; /* Increased height for the video */
+  height: 500px;
   border-radius: 8px;
 }
 
@@ -89,33 +92,33 @@ h2 {
   padding: 0 1rem;
 }
 
+/* All buttons */
 .button {
-  background: linear-gradient(135deg, #34c759, #2ecc71);
+  background: linear-gradient(135deg, #ff4d4d, #ff0000); /* Red gradient */
   color: #fff;
   padding: 0.8rem 1.6rem;
   border-radius: 50px;
   font-size: 1.2rem;
   font-weight: bold;
-  box-shadow: 0 0 15px rgba(0, 255, 0, 0.7);
+  box-shadow: 0 5px 15px rgba(255, 0, 0, 0.5);
   border: none;
   cursor: pointer;
-  transition: all 0.3s ease-in-out;
-  animation: glowScale 1.5s ease-in-out infinite;
+  animation: bounce 1.5s infinite ease-in-out;
+  margin-bottom: 10px;
 }
 
-.button:hover {
-  background: linear-gradient(135deg, #28a745, #2ecc71);
-  box-shadow: 0 0 30px rgba(0, 255, 0, 1), 0 0 50px rgba(0, 255, 0, 0.9);
-  transform: scale(1.1);
-}
-
-@keyframes glowScale {
-  0% {
-    box-shadow: 0 0 15px rgba(0, 255, 0, 0.7), 0 0 25px rgba(0, 255, 0, 0.8);
-    transform: scale(1);
+/* Bounce animation keyframes */
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
   }
 }
 
+/* Features section */
 .features-section {
   display: flex;
   justify-content: space-between;
@@ -136,8 +139,8 @@ h2 {
   font-weight: bold;
   text-align: center;
   margin-bottom: 12px;
-  color: #fff; /* Keeping the text color simple */
-  animation: none; /* Remove the animation */
+  color: #fff;
+  animation: none;
 }
 
 .feature-item {
@@ -239,10 +242,11 @@ h2 {
   font-weight: bold;
   text-align: center;
   margin-bottom: 20px;
-  color: #333;
+  color: white;
   font-family: "Poppins", sans-serif;
 }
 
+/* discount section */
 .discount-section {
   background: linear-gradient(135deg, #ff8a00, #e52e71);
   padding: 2rem;
@@ -260,7 +264,154 @@ h2 {
   color: white;
 }
 
+/* Timer styles */
+.timer-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.timer {
+  display: inline-block;
+  padding: 1rem 2rem;
+  border: 2px solid red;
+  background-color: white;
+  color: black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  border-radius: 10px;
+}
+
+/* about section */
+.about-section {
+  background: linear-gradient(135deg, #ff8a00 0%, #e52e71 100%),
+    url("images/about-bg.jpg");
+  background-size: cover;
+  background-blend-mode: overlay;
+  color: white;
+  margin-bottom: 20px;
+  margin-top: 20px;
+}
+
+.about-section h2 {
+  font-size: 2.5rem;
+  font-style: bold;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.nk_img {
+  height: 300px;
+  width: 350px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+  display: inline-block;
+  border: #333 solid 3px;
+  box-shadow: 15px 18px 24px rgba(0, 0, 0, 0.2);
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+}
+
+.about-section ul {
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.about-section p {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.about-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+/* experience section */
+.experience-section {
+  background-color: #f9f8f8;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.experience-section h3 {
+  text-align: center;
+  font-weight: 600px;
+}
+
+.experience-section img {
+  height: 300px;
+  width: 500px;
+  box-shadow: 15px 18px 24px rgba(0, 0, 0, 0.2);
+  margin-bottom: 17px;
+  margin-top: 15px;
+}
+
+/* why to choose Nk section*/
+.why-choose-section {
+  background: linear-gradient(135deg, #ff8a00 0%, #e52e71 100%);
+  padding: 3rem 1.5rem;
+  color: white;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.why-choose-section h2 {
+  text-align: center;
+  font-size: 2.2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  line-height: 2.9rem;
+  display: inline-block;
+}
+
+.why-choose-section ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+}
+
+.why-choose-section ul li {
+  font-size: 1.125rem;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 0.5rem 1rem 0.5rem 3rem;
+  border-radius: 5px;
+  position: relative;
+}
+
+.why-choose-section ul li::before {
+  content: "";
+  background: url("images/bullet.png") no-repeat center center;
+  background-size: contain;
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  left: 1rem;
+  top: 30px;
+  transform: translateY(-50%);
+}
+
+.why-choose-section p {
+  font-size: 1.125rem;
+  line-height: 1.8;
+  margin-top: 2rem;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: justify;
+}
+
+/* Testimonials Section */
 .testimonials-section {
+  margin-top: 10px;
   padding: 50px 0;
   background-color: #f1f1f1;
   text-align: center;
@@ -467,7 +618,7 @@ h2 {
   }
 
   .footer {
-    height: 350px;
+    height: 470px;
     padding: 2rem;
   }
 
