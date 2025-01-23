@@ -486,11 +486,25 @@
   background-color: rgb(49, 49, 49);
   padding: 4rem;
   color: #fff;
-  height: 200px;
+  height: 450px;
 }
 
 .footer i {
   font-size: 1.4rem;
+}
+
+.diff-location {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 5px;
+}
+
+.diff-location a {
+  display: inline-block;
+  padding: 1px 1rem;
+  color: white;
+  text-decoration: none;
+  font-family: "Times New Roman", Times, serif;
 }
 
 /*=====================================*/
@@ -618,7 +632,7 @@
   }
 
   .footer {
-    height: 470px;
+    height: 600px;
     padding: 2rem;
   }
 
