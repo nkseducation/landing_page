@@ -133,7 +133,7 @@
 <!-- Features Section -->
     <section class="features-section">
       <div class="features-left">
-        <h2 class="text-5xl font-bold text-center text-white-600 mb-6">
+        <h2 class="text-5xl font-bold text-center mb-6">
           Our Features
         </h2>
         <div class="feature-item">
@@ -170,7 +170,8 @@
           <h3>Regular Batches (4th to 10th Grade)</h3>
           <ul>
             <li>English Medium (इंग्रजी माध्यम)</li>
-            <li>Semi-English Medium (अर्ध-इंग्रजी माध्यम)</li>
+            <li>Semi-English Medium (सेमी
+              -इंग्रजी माध्यम)</li>
             <li>Marathi Medium (मराठी माध्यम)</li>
           </ul>
         </div>
@@ -196,7 +197,7 @@
         🎉Every Course Has Massive Discounts!🎉
       </h2>
       <p class="discount-section-subtitle text-2xl mt-4 mb-6">
-        <i>तुमच्या शिक्षणाच्या प्रवासात उत्कृष्टता साध्य करण्याची संधी मिळवा!</i>
+        <i>कोर्स खरेदी करा आणि मिळवा खालील अतिरिक्त लाभ!</i>
       </p>
       <!-- Exclusive Offer Section -->
 <section class="exclusive-offer-section text-center">
@@ -204,14 +205,16 @@
     <!-- Offer List -->
     <ul class="exclusive-offers-list text-lg mt-6 mb-6">
       <li>✅ बोर्ड परीक्षेचे सराव पेपर (₹350 किंमत) – मोफत!</li>
-      <li>✅सर्व विषयांच्या संपूर्ण PDF नोट्स (₹450 किंमत) – मोफत!**</li>
+      <li>✅सर्व विषयांच्या संपूर्ण PDF नोट्स (₹450 किंमत) – मोफत!</li>
       <li>✅5000+ प्रश्नांसह MCQ टेस्ट सिरीज – मोफत!</li>
-      <li>✅इंग्रजी कोर्स (₹12,000 किंमत) – फक्त ₹5,000 मध्ये!</li>
-      <li>✅अतिरिक्त 40% पर्यंत सूट मिळवा!</li>
+      <li>✅इंग्रजी कोर्स (₹1,500 किंमत) – मोफत!</li>
     </ul>
   </div>
 </section>
-    </section>
+</section>
+  <div class="timer-up-text">
+    <h1>अतिरिक्त 40% पर्यंत सूट मिळवा!</h1>
+  </div>
 
     <div class="timer-container">
       <div id="countdown-timer" class="timer"></div>
@@ -258,7 +261,7 @@
         </p>
 
         <img src="images/nk_img.jpg" class="nk_img" />
-        <h4 class="text-1xl">MR . Nagesh Kumbhar Sir</h4>
+        <h4 class="text-1xl">Mr.  N.B. Kumbhar Sir</h4>
       </div>
     </section>
 
@@ -578,13 +581,13 @@
       document.addEventListener("DOMContentLoaded", function () {
         const countdownElement = document.getElementById("countdown-timer");
 
-        // Set the end date (10 days from now)
-        const endDate = new Date();
-        endDate.setDate(endDate.getDate() + 10);
+        // Set the end time (24 minutes from now)
+        const endTime = new Date();
+        endTime.setMinutes(endTime.getMinutes() + 24);
 
         function updateTimer() {
           const now = new Date();
-          const timeLeft = endDate - now;
+          const timeLeft = endTime - now;
 
           if (timeLeft <= 0) {
             countdownElement.textContent = "Offer Expired!";
@@ -593,15 +596,11 @@
           }
 
           const days = Math.floor(timeLeft / (1000 * 60 * 60 * 24));
-          const hours = Math.floor(
-            (timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)
-          );
-          const minutes = Math.floor(
-            (timeLeft % (1000 * 60 * 60)) / (1000 * 60)
-          );
+          const hours = Math.floor((timeLeft % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((timeLeft % (1000 * 60 * 60)) / (1000 * 60));
           const seconds = Math.floor((timeLeft % (1000 * 60)) / 1000);
 
-          countdownElement.textContent = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+          countdownElement.textContent = `${days}days ${hours}hrs ${minutes}mins ${seconds}sec`;
         }
 
         // Update timer every second
@@ -609,5 +608,6 @@
         updateTimer();
       });
     </script>
+
   </body>
 </html>

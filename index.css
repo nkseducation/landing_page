@@ -24,6 +24,7 @@
   transform: scale(1.1);
 }
 
+.features-section h2,
 .discount-section h2,
 .video-section h2,
 .testimonials-section h2 {
@@ -153,10 +154,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background: linear-gradient(135deg, #ff8a00 0%, #e52e71 100%);
+  background: #eee6e6;
+  color: black;
   padding: 40px 0;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-top: 30px;
+  margin-bottom: 20px;
 }
 
 .features-left,
@@ -169,8 +172,8 @@
   font-weight: bold;
   text-align: center;
   margin-bottom: 12px;
-  color: #fff;
-  animation: none;
+  color: black;
+  animation: lightning 1.5s infinite;
 }
 
 .feature-item {
@@ -180,7 +183,7 @@
   margin-bottom: 8px;
   margin-left: 150px;
   font-size: 2.1rem;
-  color: white;
+  color: black;
   transition: transform 0.3s ease-in-out;
 }
 
@@ -217,8 +220,9 @@
 .regular-batches h3 {
   font-size: 2rem;
   font-weight: bold;
-  color: white;
+  color: black;
   margin-bottom: 15px;
+  animation: lightning 1.5s infinite;
 }
 
 .competitive-exams ul,
@@ -231,7 +235,7 @@
 .regular-batches li {
   font-size: 1.3rem;
   margin-bottom: 8px;
-  color: white;
+  color: black;
 }
 
 @keyframes fadeIn {
@@ -280,7 +284,7 @@
 .discount-section {
   background: linear-gradient(135deg, #ff8a00, #e52e71);
   padding: 2rem;
-  margin-top: 2px;
+  margin-top: 25px;
   margin-bottom: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
@@ -630,7 +634,6 @@
   .discount-section h2 {
     font-size: 2.2rem;
     line-height: 2.5rem;
-    word-wrap: break-word;
     text-align: center;
     margin: 10px auto;
     width: 90%;
@@ -671,6 +674,12 @@
 
   .discount-section p {
     font-size: 0.6rem;
+  }
+
+  .timer-up-text h1 {
+    text-align: center;
+    font-size: 25px;
+    font-style: bold;
   }
 
   .testimonial-item {
