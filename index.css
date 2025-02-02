@@ -298,6 +298,11 @@
   color: white;
 }
 
+.timer-up-text h1 {
+  align-items: center;
+  font-size: 30px;
+}
+
 /* Timer styles */
 .timer-container {
   display: flex;
